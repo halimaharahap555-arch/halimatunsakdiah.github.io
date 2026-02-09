@@ -8,116 +8,170 @@
     <style>
         body {
             margin: 0;
-            font-family: "Trebuchet MS", sans-serif;
-            background-color: #f7f7f7;
-            color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+            color: #1f2933;
         }
 
         header {
-            background-color: #4a5568;
+            background-color: #111827;
             color: #ffffff;
-            padding: 30px 20px;
-            text-align: left;
+            padding: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         header h1 {
+            font-size: 20px;
             margin: 0;
-            font-size: 26px;
+            letter-spacing: 1px;
         }
 
-        header p {
-            margin-top: 5px;
-            font-size: 14px;
-            color: #e2e8f0;
-        }
-
-        nav {
-            background-color: #2d3748;
-            padding: 10px 20px;
-        }
-
-        nav a {
-            color: #cbd5e0;
-            margin-right: 15px;
+        header nav a {
+            color: #9ca3af;
+            margin-left: 15px;
             text-decoration: none;
             font-size: 14px;
         }
 
-        nav a:hover {
+        header nav a:hover {
             color: #ffffff;
         }
 
-        main {
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
             padding: 40px 20px;
         }
 
         .intro {
-            max-width: 700px;
-            margin-bottom: 40px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
         }
 
         .intro h2 {
-            font-size: 22px;
-            margin-bottom: 10px;
+            margin-top: 0;
+            font-size: 28px;
         }
 
         .intro p {
-            line-height: 1.7;
+            line-height: 1.6;
+            color: #4b5563;
         }
 
-        .menu-grid {
+        .stats {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 20px;
-            max-width: 800px;
         }
 
-        .menu-card {
-            background-color: #ffffff;
+        .card {
+            background-color: #1f2933;
+            color: #ffffff;
             padding: 25px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 12px;
         }
 
-        .menu-card h3 {
+        .card h3 {
             margin-top: 0;
             font-size: 16px;
-            color: #2d3748;
+            letter-spacing: 1px;
         }
 
-        .menu-card p {
-            font-size: 13px;
-            color: #555;
+        .card span {
+            font-size: 32px;
+            font-weight: bold;
         }
 
         footer {
-            margin-top: 60px;
-            background-color: #2d3748;
-            color: #cbd5e0;
+            margin-top: 40px;
+            background-color: #111827;
+            color: #9ca3af;
             text-align: center;
             padding: 20px;
             font-size: 13px;
         }
 
         footer a {
-            color: #cbd5e0;
-            margin: 0 8px;
+            color: #9ca3af;
+            margin: 0 10px;
             text-decoration: none;
         }
 
         footer a:hover {
             color: #ffffff;
         }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Ruang Baca Pribadi</h1>
-    <p>Catatan sederhana tentang buku dan pemikiran</p>
+    <h1>Halima Library</h1>
+    <nav>
+        <a href="#">Dashboard</a>
+        <a href="#">Catatan</a>
+        <a href="#">Statistik</a>
+        <a href="#">Profil</a>
+    </nav>
 </header>
 
-<nav>
-    <a hr
+<main class="container">
+
+    <div class="intro">
+        <h2>Ruang Baca Digital</h2>
+        <p>
+            Website ini digunakan sebagai jurnal membaca pribadi.
+            Setiap buku yang dibaca dicatat, dievaluasi,
+            dan disimpan sebagai arsip pengetahuan.
+        </p>
+        <p>
+            Fokus utama website ini adalah dokumentasi proses membaca,
+            bukan sekadar daftar koleksi.
+        </p>
+    </div>
+
+    <div class="stats">
+        <div class="card">
+            <h3>TOTAL BUKU</h3>
+            <span>42</span>
+        </div>
+
+        <div class="card">
+            <h3>SELESAI DIBACA</h3>
+            <span>27</span>
+        </div>
+
+        <div class="card">
+            <h3>DALAM PROSES</h3>
+            <span>10</span>
+        </div>
+
+        <div class="card">
+            <h3>CATATAN</h3>
+            <span>58</span>
+        </div>
+    </div>
+
+</main>
+
+<footer>
+    <p>Kontak & Media Sosial</p>
+    <a href="#">Email</a> |
+    <a href="#">Instagram</a> |
+    <a href="#">GitHub</a>
+    <p>&copy; 2026 Halima Library</p>
+</footer>
+
+</body>
+</html>
 
