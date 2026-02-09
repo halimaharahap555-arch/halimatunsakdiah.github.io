@@ -63,4 +63,120 @@
         }
 
         .koleksi {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .koleksi-item {
+            background-color: #1e293b;
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .koleksi-item h3 {
+            margin-top: 0;
+            font-size: 16px;
+        }
+
+        .koleksi-item p {
+            font-size: 13px;
+            color: #cbd5e1;
+        }
+
+        footer {
+            margin-top: 60px;
+            background-color: #0f172a;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 25px;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #cbd5e1;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Halima Library</h1>
+    <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#tentang">Tentang Saya</a>
+        <a href="#koleksi">Koleksi</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+</header>
+
+<main>
+
+    <section id="beranda">
+        <h2>Beranda</h2>
+        <p>
+            Selamat datang di Halima Library, sebuah website
+            perpustakaan pribadi yang digunakan untuk
+            mencatat bacaan, menyimpan pemikiran,
+            dan mengelola koleksi buku secara mandiri.
+        </p>
+    </section>
+
+    <section id="tentang">
+        <h2>Tentang Saya</h2>
+        <p>
+             Halima Library
+            Website ini dibuat sebagai media dokumentasi
+            kegiatan membaca sekaligus latihan pengelolaan
+            informasi secara digital.
+        </p>
+    </section>
+
+    <section id="koleksi">
+        <h2>Koleksi</h2>
+        <div class="koleksi">
+            <div class="koleksi-item">
+                <h3>Buku Akademik</h3>
+                <p>Koleksi buku perkuliahan dan referensi ilmiah.</p>
+            </div>
+
+            <div class="koleksi-item">
+                <h3>Buku Umum</h3>
+                <p>Bacaan ringan, novel, dan pengembangan diri.</p>
+            </div>
+
+            <div class="koleksi-item">
+                <h3>Catatan Bacaan</h3>
+                <p>Ringkasan dan refleksi dari buku yang dibaca.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak">
+        <h2>Kontak</h2>
+        <p>
+            Jika ingin menghubungi saya, silakan melalui:
+        </p>
+        <p>
+            Email: halimaharahap555@gmail.com <br>
+            Instagram: halima harahap
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Halima Library</p>
+</footer>
+
+</body>
+</html>
 
